@@ -18,13 +18,11 @@ I have tested for OpenVPN 2.5.8 with OpenWRT 23.05 and that was working and obfu
 
 On compiling, the patches are executed automatically.  
 
-For a quick check to see if the scramble options are avaialble in your build, from commandline:  
+For a quick check to see if the scramble options are present in your build, from commandline:  
 `strings /usr/sbin/openvpn | grep scramble`  
 
 ## Usage
-Note: scramble options must be the same on client and server side!
-
-In the OpenVPN config add one of the four options, note: scramble options must be the same on client and server side!:  
+In the OpenVPN config add one of the four options below, note: scramble options must be set the same on client and server side!:  
 
 `scramble "password"`
 scramble is the leftmost option name. This can be followed by a string which will be used to perform a simple xor operation the packet payload.  
@@ -40,14 +38,17 @@ This performs a xor operation, utilising the current position in the packet payl
 `scramble obfuscate "password"`  
 This method is more secure. It utilises the 3 types of scrambling mentioned above. "password" is the string which you want to use.
 
-Both DDWRT OpenVPN Client and server supports scramble there are also clients available for Android and Windows:
+Both DDWRT OpenVPN Client and server supports scramble there are also clients available for Android, Windows and MacOS:
 https://github.com/lawtancool
 
 Android:  
 https://github.com/lawtancool/ics-openvpn-xor/releases
 
 Windows:  
-https://github.com/lawtancool/openvpn-windows-xor/releases
+https://github.com/lawtancool/openvpn-windows-xor/releases  
+
+MacOS:  
+https://tunnelblick.net/cFAQ.html  
 
 See also:  
 https://forum.openwrt.org/t/scramble-obfuscate-in-openvpn/151570  
