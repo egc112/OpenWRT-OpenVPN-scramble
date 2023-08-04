@@ -11,7 +11,7 @@ Patches are available for OpenVPN 2.5.x and for 2.6.x and are based on [Tunelbli
 ## To compile:
 Copy all patch files to `feeds/packages/net/openvpn/patches`
 For OpenVPN 2.5.x use the patches from the 2.5 directory.  
-For OpenVPN 2.6.x use the patches from the 2.6 directory, but take note this is not compatible with DCO so for OpenVPN 2.6.x add to the makefile (`feeds/packages/net/openvpn/makefile): --disable-dco  
+For OpenVPN 2.6.x use the patches from the 2.6 directory, but take note this is not compatible with DCO so for OpenVPN 2.6.x add to the makefile (`feeds/packages/net/openvpn/makefile`): --disable-dco  
 
 On compiling the patches are executed automatically
 
