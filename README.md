@@ -19,19 +19,18 @@ On compiling the patches are executed automatically
 Note: scramble options must be the same on client and server side!
 
 In the OpenVPN config add:
-scramble "password"
+`scramble "password"`
 scramble is the leftmost option name. This can be followed by a string which will be used to perform a simple xor operation the packet payload.  
 Note for tunnelblick this option is:
 scramble xormask "password"
 
-However if the following is used instead, a different action will occur.
-scramble reverse  
+`scramble reverse`  
 This simply reverses all the data in the packet. This should be enough to get past the regular expression detection in both China and Iran.  
 
-scramble xorptrpos  
+`scramble xorptrpos`  
 This performs a xor operation, utilising the current position in the packet payload.
 
-scramble obfuscate "password"  
+`scramble obfuscate "password"`  
 This method is more secure. It utilises the 3 types of scrambling mentioned above. "password" is the string which you want to use.
 
 Both DDWRT OpenVPN Client and server supports scramble there are also clients available for Android and Windows:
