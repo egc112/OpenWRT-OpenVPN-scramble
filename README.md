@@ -15,7 +15,7 @@ For OpenVPN 2.6.x use the patches from the 2.6 directory, but take note this is 
 
 I have tested for OpenVPN 2.5.8 with OpenWRT 23.05 and that was working and obfuscating with a DDWRT router as client.  
 
-On compiling the patches are executed automatically.  
+On compiling, the patches are executed automatically.  
 
 For a quick check to see if the scramble options are avaialble in your build, from commandline:  
 `strings /usr/sbin/openvpn | grep scramble`  
