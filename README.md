@@ -1,9 +1,9 @@
 # OpenVPN Scramble options for OpenWRT
 
 The Scramble options can be used to obfuscate an OpenVPN connection, this can be useful to escape censoring.  
-It is supported by a number of OpenVPN providers e.g. TorGuard, [StrongVPN](https://blog.strongvpn.com/strongvpn-scramble/), IPvanish etc. But also for other third partiy fimrware (DDWRT)
- and for Android and Windows.  
-For some backgroend please read: https://tunnelblick.net/cOpenvpn_xorpatch.html  
+It is supported by a number of OpenVPN providers e.g. TorGuard, [StrongVPN](https://blog.strongvpn.com/strongvpn-scramble/), IPvanish etc.  
+But also available for other third partiy fimrware (DDWRT) and for Android, Windows and MacOS.  
+For some background please read: https://tunnelblick.net/cOpenvpn_xorpatch.html  
 
 Scramble options must be added to OpenVPN by adding a series of patches and compile your own build with it (or the OpenVPN-OpenSSL package).  
 
