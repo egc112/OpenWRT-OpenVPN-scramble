@@ -1,12 +1,12 @@
 # openvpn-scramble
 
-The Scramble options can be used to obfuscate the connection this can be useful to escape censoring.  
+The Scramble options can be used to obfuscate the connection, this can be useful to escape censoring.  
 It is supported by a number of OpenVPN providers e.g. TorGuard, [StrongVPN](https://blog.strongvpn.com/strongvpn-scramble/), IPvanish etc.
 For some backgroend please read: https://tunnelblick.net/cOpenvpn_xorpatch.html  
 
 Scramble options must be added to OpenVPN by adding a series of patches and compilie your own build with it (or the OpenVPN-OpenSSL package)
 
-Patches are available for OpenVPN 2.5.x and for 2.6.x and are based on Tunelblick's patches but adapted to work seamlessly with with OpenWRT
+Patches are available for OpenVPN 2.5.x and for 2.6.x and are based on [Tunelblick's patches](https://github.com/Tunnelblick/Tunnelblick/tree/master/third_party/sources/openvpn) but adapted to work seamlessly with with OpenWRT
 
 ## To compile:
 Copy all patch files to `feeds/packages/net/openvpn/patches`
@@ -45,6 +45,7 @@ https://github.com/lawtancool/openvpn-windows-xor/releases
 
 See also:  
 https://forum.openwrt.org/t/scramble-obfuscate-in-openvpn/151570
+https://scramblevpn.wordpress.com/2017/04/16/compile-patched-openvpn-ipk-package-for-openwrtlede-router/ 
 
 
 
