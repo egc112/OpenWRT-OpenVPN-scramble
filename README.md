@@ -1,8 +1,8 @@
 # openvpn-scramble
 
-The Scramble options can be used to obfuscate the connection this can be useful to escape censoring.
+The Scramble options can be used to obfuscate the connection this can be useful to escape censoring.  
 It is supported by a number of OpenVPN providers e.g. TorGuard, [StrongVPN](https://blog.strongvpn.com/strongvpn-scramble/), IPvanish etc.
-For some backgroend please read: https://tunnelblick.net/cOpenvpn_xorpatch.html
+For some backgroend please read: https://tunnelblick.net/cOpenvpn_xorpatch.html  
 
 Scramble options must be added to OpenVPN by adding a series of patches and compilie your own build with it (or the OpenVPN-OpenSSL package)
 
@@ -11,7 +11,7 @@ Patches are available for OpenVPN 2.5.x and for 2.6.x and are based on Tunelblic
 ## To compile:
 Copy all patch files to `feeds/packages/net/openvpn/patches`
 For OpenVPN 2.5.x use the patches form the 2.5 directory
-For OpenVPN 2.6.x use the patches from the 2.6 directory, but take note this is not comaptible with DCO so for OpenVPN 2.6.x add to the makefile (`feeds/packages/net/openvpn/makefile): --disable-dco
+For OpenVPN 2.6.x use the patches from the 2.6 directory, but take note this is not compatible with DCO so for OpenVPN 2.6.x add to the makefile (`feeds/packages/net/openvpn/makefile): --disable-dco
 
 On compiling the patches are executed automatically
 
