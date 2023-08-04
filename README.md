@@ -18,7 +18,8 @@ On compiling the patches are executed automatically
 ## Usage
 Note: scramble options must be the same on client and server side!
 
-In the OpenVPN config add:
+In the OpenVPN config add one of the four options, note: scramble options must be the same on client and server side!:  
+
 `scramble "password"`
 scramble is the leftmost option name. This can be followed by a string which will be used to perform a simple xor operation the packet payload.  
 Note for tunnelblick this option is:
