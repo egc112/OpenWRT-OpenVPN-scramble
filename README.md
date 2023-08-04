@@ -9,11 +9,16 @@ Scramble options must be added to OpenVPN by adding a series of patches and comp
 Patches are available for OpenVPN 2.5.x and for 2.6.x and are based on [Tunelblick's patches](https://github.com/Tunnelblick/Tunnelblick/tree/master/third_party/sources/openvpn) but adapted to work seamlessly with with OpenWRT
 
 ## To compile:
-Copy all patch files to `feeds/packages/net/openvpn/patches`
+Copy all patch files to `feeds/packages/net/openvpn/patches`  
 For OpenVPN 2.5.x use the patches from the 2.5 directory.  
 For OpenVPN 2.6.x use the patches from the 2.6 directory, but take note this is not compatible with DCO so for OpenVPN 2.6.x add to the makefile (`feeds/packages/net/openvpn/makefile`): --disable-dco  
 
-On compiling the patches are executed automatically
+I have tested for OpenVPN 2.5.8 with OpenWRT 23.05 and that was working and obfuscating with a DDWRT router as client.  
+
+On compiling the patches are executed automatically.  
+
+For a quick check to see if the scramble options are avaialble in your build, from commandline:  
+`strings /usr/sbin/openvpn | grep scramble`  
 
 ## Usage
 Note: scramble options must be the same on client and server side!
