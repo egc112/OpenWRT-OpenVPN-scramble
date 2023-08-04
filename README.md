@@ -44,8 +44,10 @@ Windows:
 https://github.com/lawtancool/openvpn-windows-xor/releases
 
 See also:  
-https://forum.openwrt.org/t/scramble-obfuscate-in-openvpn/151570
-https://scramblevpn.wordpress.com/2017/04/16/compile-patched-openvpn-ipk-package-for-openwrtlede-router/ 
+https://forum.openwrt.org/t/scramble-obfuscate-in-openvpn/151570  
+https://scramblevpn.wordpress.com/2017/04/16/compile-patched-openvpn-ipk-package-for-openwrtlede-router/   
+https://shenzhensuzy.wordpress.com/2019/01/26/openvpn-with-xor-patch/  
+
 
 
 
