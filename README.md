@@ -46,6 +46,7 @@ https://github.com/lawtancool/ics-openvpn-xor/releases
 
 Windows:  
 https://github.com/lawtancool/openvpn-windows-xor/releases  
+https://github.com/samanajd2/OpenVPN-XOR-windows  
 
 MacOS:  
 https://tunnelblick.net/cFAQ.html  
